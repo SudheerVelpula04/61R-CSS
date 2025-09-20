@@ -1,0 +1,70 @@
+/*
+ctrl +/-comments
+is it possible to change the order of parity in css
+yes
+Box-modal
+---------
+content- width and hight
+padding- around the content the padding will apply 
+        the padding will apply the bg-color
+border- around the padding the border will apply
+margin- around the border and element out side the margin will apply
+        the margin will take the -ve values
+        the margin dose't apply the bg-color
+ */
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+ .container{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom:30px ;
+    padding-left: 40px; */
+
+    /* padding: 10px 20px 30px 40px; */
+
+    /* border-top-width: 5px;
+    border-top-color:red ;
+    border-top-style: solid;
+
+    border-right-width: 5px;
+    border-right-color: purple;
+    border-right-style: dotted;
+
+    border-bottom-width: 5px;
+    border-bottom-color: black;
+    border-bottom-style: dashed;
+
+
+    border-left-width: 5px;
+    border-left-color: blue;
+    border-left-style: groove; */
+
+
+    /* border-color: red;
+    border-width: 5px;
+    border-style: solid; */
+
+    border: 5px solid purple;
+    padding: 10px;
+
+
+
+    /* border: 5px solid ; */
+
+    /* margin: 10px 20px 30px 40px; */
+ }
+
+ p{
+    background-color: lightblue;
+ }
+ h1{
+    background-color: lightcoral;
+ }
+
+
