@@ -1,109 +1,69 @@
-/* positions
--------------
-there are only one property use for positions
-in that property we have the number of value there are...
-
-
-stx:
-   selector{
-      position:static,relative,absolute,fixed,sticky;
-      top:value;
-      bottom:value;
-      right:value;
-      left:value;
-   }
-
-
- */
-
-.first{
-  border: 2px solid purple;
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.grand-parent{
-  width: 500px;
-  height: 500px;
-  border: 5px solid red;
-  position: absolute;
-  top: 250px;
-  left: 250px;
-
-  /* right: 0; */
-}
-
- .parent{
-  width: 200px;
-  height: 200px;
-  border: 5px solid black;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  
- 
- }
- .img{
-  width: 400px;
-  height: 300px;
-  border: 5px solid red;
-  border-radius: 50%;
-  /* overflow: hidden; */
-  position: absolute;
-  bottom: 0;
- }
- img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
- }
-
- h1{
-  text-align: center;
-  background-color: rebeccapurple;
-  padding: 10px;
-
- }
- .nav{
-  background-color: purple;
-  padding: 10px;
-  color: white;
-  position: fixed;
-  top: 0px;
-  /* bottom: 0px; */
-  /* left: 0px; */
- }
- .item{
-  margin-left: 200px;
- }
- h1{
-  position: sticky;
-  top: 40px;
- }
-
 
 /*
 
 combinators
-flex-parent
-flex-child
-pclass
-pelemets
-transactions
-units
-2 hands on project 
-grid
-transforms
-media q
-animations
-1 project
+-----------
+1. child combinator   -----  (>)
+  child combinator is direct will apply the color if the child is available
+
+2. decadent ------------( ) (space)
+    decadent selector is direct and indirect will apply the color if the child is available
 
 
+3. next sibling selector or adjacent sibling selector -- (+)
+
+4. general sibling selector ---------  (~)
+
+
+syx: 
+    simpleSelector combinator simpleSelector{
+              property:value;
+    }
 
 
  */
+
+ /* .container > .item{
+  background-color: purple;
+  color: white;
+  margin: 10px;
+ } */
+
+
+ /* div~p{
+  color: red;
+ } */
+
+
+ /*
+  display
+  -------
+  the display property how the container need to be display
+  display:inline;
+  display:inline-block;
+  display:block;
+  display:none;
+  visibility:hidden;
+  display:flex; --- 25 pro child and parent
+  display:grid; --- 25 pro child and parent
+
+  */
+
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin: 10px;
+    display: inline-block;
+    /* display: none; */
+    visibility: hidden;
+  }
+  span{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: lightgreen;
+    display: inline-block;
+  }
+
 
