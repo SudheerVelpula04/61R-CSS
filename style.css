@@ -22,48 +22,15 @@ syx:
 
 
  */
-
- /* .container > .item{
-  background-color: purple;
-  color: white;
-  margin: 10px;
- } */
-
-
- /* div~p{
-  color: red;
- } */
-
-
- /*
-  display
-  -------
-  the display property how the container need to be display
-  display:inline;
-  display:inline-block;
-  display:block;
-  display:none;
-  visibility:hidden;
-  display:flex; --- 25 pro child and parent
-  display:grid; --- 25 pro child and parent
-
-  */
-
-  div{
-    width: 200px;
-    height: 200px;
-    background-color: yellowgreen;
-    margin: 10px;
-    display: inline-block;
-    /* display: none; */
-    visibility: hidden;
-  }
-  span{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    background-color: lightgreen;
-    display: inline-block;
-  }
-
-
+.container{
+  width: 200px;
+  height: 480px;
+  /* border: 2px solid black; */
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.container>img{
+  width: 100%;
+  /* height: 100%; */
+}
