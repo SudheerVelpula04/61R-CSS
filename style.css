@@ -1,36 +1,78 @@
 
 /*
+display
+------
+display:flex;
+inside child's will convert into inline block
+the display flex is one dimensional 
+  row are column
+  x are y axis
 
-combinators
------------
-1. child combinator   -----  (>)
-  child combinator is direct will apply the color if the child is available
-
-2. decadent ------------( ) (space)
-    decadent selector is direct and indirect will apply the color if the child is available
-
-
-3. next sibling selector or adjacent sibling selector -- (+)
-
-4. general sibling selector ---------  (~)
-
-
-syx: 
-    simpleSelector combinator simpleSelector{
-              property:value;
-    }
+  the display flex property need to use inside the parent elements only 
+  in that child's will convert into flexibly
 
 
  */
-.container{
-  width: 200px;
-  height: 480px;
-  /* border: 2px solid black; */
-  margin: 5px;
-  display: inline-block;
-  vertical-align: top;
-}
-.container>img{
-  width: 100%;
-  /* height: 100%; */
-}
+ .container{
+  border: 2px solid #000000;
+  display: flex;
+  width: 400px;
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  height: 300px;
+  /* gap: 10px; */
+  /* justify-content: start; */
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  align-items: start;
+  /* align-items: end; */
+    /* align-items: center; */
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* align-content: start; */
+    /* align-content: end; */
+    align-content: center;
+ }
+
+
+
+
+
+ .item{
+  padding: 5px;
+ }
+ .item-1{
+  background-color: lightgreen;
+ }
+ .item-2{
+  background-color: lightgrey;
+ }
+ .item-3{
+  background-color: aqua;
+ }
+ .item-4{
+  background-color: lightsalmon;
+ }
+ .item-5{
+  background-color: lightslategrey;
+ }
+
+
+ .nav-container{
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+ }
+ .bi{
+  font-size: xx-large;
+  padding: 10px;
+ }
