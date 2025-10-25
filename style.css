@@ -1,94 +1,100 @@
 /*
-    pseudo elements in css
-    -------------------
-   
-    
+units in css
+------------
+ there are 2 types of units in css
+ 1. relative
+    % it checks the parent container width and height
+        default width viewport-100%
+    vh  it will find the viewport height
+        note:
+          it won't check the parent container height
+
+    vw  it will find the viewport width
+        note:
+          it won't check the parent container width
+    rem - the rem is root element of font-size 
+          default root element font-size is 16px
+          it only take the root element font size
+          note:
+            this rem need to use only for font-size
+            1 rem =16px
+    em
+      the em will check is the parent element font-size
+      the default em font-size is root element font size
+      note:
+          this em need to use only for font-size
+
+ 2. absolute
+    px,in,cm,mm
  */
-.para::before{
-  content: "hi hello";
-  color: red;
-}
-p>span{
-  color: red;
-}
-.para::after{
-  content: "✍️";
-}
-/* .second::first-letter{
-  font-size: xx-large;
-  color: red;
-  padding: 10px;
-  text-transform: lowercase;
-}
-.second::first-line{
-  color: yellowgreen;
-  text-transform: uppercase;
-} */
-/* .second::selection{
-    color: red;
-    background-color: black;
-} */
-
-li::before{
-  content: "👉";
-  font-size: xx-large;
-  /* color: aqua; */
-}
-/* li::first-letter{
-  font-size: xx-large;
-} */
- li::after{
-  content: "🫵";
-  font-size: xx-large;
+ :root{
+  font-size: 50px;
  }
 
- li:nth-child(1)::marker{
-  content: "😄";
-  font-size: xx-large;
- }
- li:nth-child(2)::marker{
-  content: "🫢";
-  font-size: xx-large;
- }
- li:nth-child(3)::marker{
-  content: "🫨";
-  font-size: xx-large;
- }
- li:nth-child(4)::marker{
-  content: "🤔";
-  font-size: xx-large;
- }
- input{
-  width: 100%;
-  padding: 20px;
- }
- input::placeholder{
-  font-size: xx-large;
-  letter-spacing: 10px;
-  font-style: italic;
-  color: rgb(211, 218, 10);
- }
- p{
-  text-transform: capitalize;
-  /* width: 300px; */
-  /* border: 2px solid; */
-  padding: 5px;
-  text-align: justify;
-  text-shadow: 5px 2px 5px red;
-  letter-spacing: 5px;
-  /* line-height: 100px; */
+  .rem{
+    width: 2rem;
+    height: 2rem;
+    font-size: 10px;
+    background-color: red;
+  }
+  .em{
+    width: 1em;
+    height: 1em;
+    background-color: lightblue;
+  }
  
+  
 
+/* body,html{
+  height: 100%;
+ } */
+ .parent{
+  width: 25%;
+  height: 500px;
+  background-color: red;
+  border: 2px solid
  }
+ .child{
+  width: 50vw;
+  height: 50vh;
+  background-color: blue;
+ }
+  /* 
+ .green{
+  width: 50%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: lightcoral;
+ }
+ .item1{
+  background-color: green;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+ }
+ .orange{
+  background-color: lightcoral;
+  margin-top: 10px;
+  width: 50%;
+  height: 50px;
+ }
+ .item2{
+  background-color: orange;
+  width: 75%;
+  height: 100%;
+  text-align: center;
+ } */
+  /* body,html{
+    height: 100%;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-
-/* create a blog  first-letter ,text-shadow ,letter-spacing,text-transform
-pseudo elements and with images */
-
-
-
-
-
-
-
-
+  .container{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+  } */

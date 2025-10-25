@@ -1,0 +1,245 @@
+/*
+css file 
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;
+    scroll-behavior: smooth;
+}
+body,html{
+    height: 100%;
+}
+ .nav-container{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: +1;
+    width: 100%;
+ }
+ .nav-container>.nav-item{
+    width: 300px;
+    text-align: center;
+    /* background-color: antiquewhite; */
+     padding: 8px;
+     transition: 0.8s ease;
+ }
+ .nav-item>a{
+   text-decoration: none;
+   color: white;
+ }
+ .nav-item:hover{
+    background-color:azure;
+    color: black;
+    cursor: pointer;
+   
+ }
+ .bg-container{
+    height: 73%;
+    background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: grayscale(50%);
+ }
+ .bg-container>.text-container{
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    line-height: 140px;
+
+ }
+ .bg-container>.text-container-2{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+ }
+ .bg-container>.text-container-3{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    right: 10px;
+ }
+ .main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+ }
+ .main-container>.main{
+    width: 50%;
+    /* border: 2px solid black; */
+    /* height: 4000px; */
+ }
+ .about{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+ }
+ .about>p{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    letter-spacing: 5px;
+ }
+ .ceo{
+    line-height: 25px;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 5px;
+    margin: 10px 0px;
+ }
+ .stuff{
+    margin: 10px 0px;
+    line-height: 25px;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 5px;
+ }
+ .chef{
+    padding: 30px;
+    background-color:rgb(186, 237, 220);
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-left-color:rgba(0, 0, 0, 0.337) ;
+ }
+ .chef>.quote{
+    margin: 10px 0px;
+ }
+ .chef>.owner{
+    margin: 10px 0px;
+ }
+ .image{
+     margin: 20px 0px;
+ }
+ .image>img{
+    width: 100%;
+    filter: grayscale(50%);
+ }
+.hover,.address{
+    padding: 10px;
+}
+label{
+   display: inline-block;
+   /* width: 300px; */
+   width: 100%;
+   /* background-color: red; */
+   text-align: center;
+    cursor: pointer;
+    padding: 10px 80px;
+}
+.food-container{
+   /* border: 2px solid red; */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.label{
+   display: flex;
+   justify-content: space-around;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.eat,.drink{
+   /* background-color: lightslategrey; */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.eat-item,.drink-item{
+   margin: 15px 0px;
+   padding: 10px;
+}
+.eat-item>p,.eat-item>h4{
+   margin: 10px 0px;
+   line-height: 30px;
+}
+.drink-item>p,.drink-item>h4{
+   margin: 10px 0px;
+   line-height: 30px;
+}
+.drink-container,.eat-container{
+   display: none;
+}
+#eat,#drink{
+   display: none;
+}
+#eat:checked~.eat-container{
+   display: block;
+}
+#drink:checked~.drink-container{
+   display: block;
+}
+.image-container-3{
+   margin: 25px 0px;
+}
+.image-container-3>img{
+   width: 100%;
+   filter: grayscale(50%);
+}
+.para-container>p{
+   margin: 10px 0px;
+   padding: 5px;
+}
+.image-container-4{
+   margin: 5px 0px;
+}
+.image-container-4>img{
+   width: 100%;
+   filter: grayscale(50%);
+}
+.fly{
+   margin: 10px 0px;
+   padding: 10px;
+   line-height: 20px;
+}
+.fly>p>span{
+   background-color: black;
+   color: white;
+   padding: 3px;
+
+}
+.reserve{
+   padding: 10px;
+}
+.form-container{
+   padding: 10px;
+}
+.form-container>form>input{
+   display: block;
+   margin: 10px 0px;
+   width: 100%;
+   height: 40px;
+}
+.form-container>form>input::placeholder{
+   padding: 10px;
+   color: aqua;
+}
+form>div>input{
+   border: 0px solid;
+   padding: 15px;
+   letter-spacing: 5px;
+   background-color: black;
+   color: white;
+}
+
+form>div>input:hover{
+   background-color: antiquewhite;
+   color: black;
+}
+.footer-container>p{
+   margin: 10px 0px 0px 0px;
+   padding: 80px;
+   text-align: center;
+   background-color: rgb(195, 246, 229);
+}
