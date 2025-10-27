@@ -243,3 +243,31 @@ form>div>input:hover{
    text-align: center;
    background-color: rgb(195, 246, 229);
 }
+@media screen and (max-width: 577px) {
+   .main-container>.main{
+      width: 90%;
+   }
+   .bg-container>.text-container{
+      font-size: 4rem;
+      line-height: 70px;
+   }
+   .bg-container{
+      height: 50%;
+   }
+   .bg-container>.text-container-2{
+      bottom: 40px;
+      left: 100px;
+   }
+   .bg-container>.text-container-3{
+      right: 120px;
+      /* bottom: ; */
+   }
+   .where-to{
+      padding: 5px;
+   }
+}
+@media screen and (min-width: 577px) and (max-width: 800px) {
+   .main-container>.main{
+      width: 80%;
+   }
+}
