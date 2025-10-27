@@ -1,48 +1,51 @@
-/*
-media query
------------
 
-RWD
----
-1. meta view-port
-2. box-sizing
-3. flex
-4. grid
-5. media query
-
-@media  screen/all/print and (break-point) {
-        selector{
-            property:value;
-        }
+*{
+  margin: 0;
+  padding: 0;
 }
 
- */
- .container{
-  width: 200px;
-  height: 200px;
+.nav{
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.item{
+  padding: 10px;
+}
+.orange{
+  background-color: orange;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+.pink{
+  background-color: pink;
+  display: none;
+}
+.yellow{
   background-color: yellow;
- }
- /*
- mobile-view:557px
- tablet-view:890px  ->orange
- desktop-view:1200px 
-  */
- @media screen and (max-width: 577px) {
-    .container{
-      background-color: red;
-      /* border-radius: 50%;
-      width: 100px;
-      height: 100px; */
-    }
- }
- @media screen and (min-width: 577px) and (max-width: 890px) {
-  .container{
-    background-color: orange;
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .orange,.pink,.blue,.green,.yellow{
+    display: none;
   }
-  
- }
- @media screen and (min-width: 890px) and (max-width: 1200px) {
-    .container{
-      background-color: purple;
-    }
- }
+  .nav{
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .red,.green,.blue{
+    display: none;
+  }
+  .yellow,.pink{
+    display: inline;
+  }
+}
